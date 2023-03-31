@@ -17,25 +17,22 @@ User -< Item
 
 Get the lab set up by running:
 
-```console
-$ bundle install
-$ rails db:migrate db:seed
+```sh
+bundle install
+rails db:migrate db:seed
 ```
-
-There is seed data in place so you can test your solution out in the browser or
-in Postman. You can also run `learn test` to run the tests.
 
 ## Deliverables
 
 Handle the following requests and return the appropriate JSON data in the response:
 
-### Users Show Route
-
 ```txt
 GET /users/:id
+```
 
-Response Body
--------
+Example Response:
+
+```json
 {
   "id": 1,
   "username": "Dwayne",
@@ -51,13 +48,13 @@ Response Body
 }
 ```
 
-### Items Index Route
-
 ```txt
 GET /items
+```
 
-Response Body
--------
+Example Response:
+
+```json
 {
   "id": 1,
   "name": "Non-stick pan",
@@ -70,9 +67,3 @@ Response Body
   }
 }
 ```
-
-## Resources
-
-- [Serialization: as_json][serialization]
-
-[serialization]: https://api.rubyonrails.org/classes/ActiveModel/Serializers/JSON.html#method-i-as_json
